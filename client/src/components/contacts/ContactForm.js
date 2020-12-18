@@ -25,6 +25,7 @@ export default function ContactForm() {
     phone: "",
     type: "personal",
   });
+  console.log(contact);
 
   const { name, email, phone, type } = contact;
 
@@ -45,6 +46,7 @@ export default function ContactForm() {
   const clearAll = () => {
     clearCurrent();
   };
+  console.log("return");
 
   return (
     <form onSubmit={onSubmit}>
